@@ -4,6 +4,8 @@ import { NFTCard } from "@/components/NFTCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { MegaphoneIcon, Sparkles, PartyPopper } from "lucide-react";
 
 // Категории NFT
 const NFT_CATEGORIES = [
@@ -112,6 +114,38 @@ const STATIC_NFTS = [
     currentBid: 3.2,
     endTime: new Date(Date.now() + 1036800000),
     category: "3D графика"
+  },
+  {
+    id: "13",
+    title: "Ethereal Visions #13",
+    image: "https://picsum.photos/400/400?random=13",
+    currentBid: 5.0,
+    endTime: new Date(Date.now() + 1123200000),
+    category: "Абстрактное искусство"
+  },
+  {
+    id: "14",
+    title: "Pixel Paradise #14",
+    image: "https://picsum.photos/400/400?random=14",
+    currentBid: 2.7,
+    endTime: new Date(Date.now() + 1209600000),
+    category: "Пиксель-арт"
+  },
+  {
+    id: "15",
+    title: "Digital Dynasty #15",
+    image: "https://picsum.photos/400/400?random=15",
+    currentBid: 6.1,
+    endTime: new Date(Date.now() + 1296000000),
+    category: "3D графика"
+  },
+  {
+    id: "16",
+    title: "Neon Nights #16",
+    image: "https://picsum.photos/400/400?random=16",
+    currentBid: 3.5,
+    endTime: new Date(Date.now() + 1382400000),
+    category: "Анимация"
   }
 ];
 
@@ -151,6 +185,33 @@ const Index = () => {
       </nav>
 
       <div className="container mx-auto py-8 px-4">
+        {/* Анонс нового проекта */}
+        <Alert className="mb-6 bg-gradient-to-r from-[#1A1F2C] to-[#2A2F3C] border-[#8B5CF6]/30 animate-pulse-light">
+          <Sparkles className="h-4 w-4 text-[#8B5CF6]" />
+          <AlertTitle className="text-[#8B5CF6]">Новый NFT проект!</AlertTitle>
+          <AlertDescription className="text-gray-300">
+            Скоро запуск нашей собственной коллекции "Neon Dreams". Следите за обновлениями!
+          </AlertDescription>
+        </Alert>
+
+        {/* Уведомление о мероприятии */}
+        <Alert className="mb-6 bg-gradient-to-r from-[#1A1F2C] to-[#2A2F3C] border-[#D946EF]/30">
+          <PartyPopper className="h-4 w-4 text-[#D946EF]" />
+          <AlertTitle className="text-[#D946EF]">NFT Art Festival</AlertTitle>
+          <AlertDescription className="text-gray-300">
+            Присоединяйтесь к нашему онлайн фестивалю NFT искусства 25 мая! Эксклюзивные дропы и встречи с художниками.
+          </AlertDescription>
+        </Alert>
+
+        {/* Акция */}
+        <Alert className="mb-6 bg-gradient-to-r from-[#1A1F2C] to-[#2A2F3C] border-[#F97316]/30">
+          <MegaphoneIcon className="h-4 w-4 text-[#F97316]" />
+          <AlertTitle className="text-[#F97316]">Специальное предложение!</AlertTitle>
+          <AlertDescription className="text-gray-300">
+            Только сегодня: комиссия на все ставки снижена до 1%! Не упустите возможность приобрести NFT выгодно.
+          </AlertDescription>
+        </Alert>
+
         <h1 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent">
           Live NFT Auctions
         </h1>
