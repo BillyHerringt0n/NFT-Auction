@@ -146,6 +146,38 @@ const STATIC_NFTS = [
     currentBid: 3.5,
     endTime: new Date(Date.now() + 1382400000),
     category: "Анимация"
+  },
+  {
+    id: "17",
+    title: "Mystic Portal #17",
+    image: "https://picsum.photos/400/400?random=17",
+    currentBid: 4.2,
+    endTime: new Date(Date.now() + 1468800000),
+    category: "Абстрактное искусство"
+  },
+  {
+    id: "18",
+    title: "Retro Wave #18",
+    image: "https://picsum.photos/400/400?random=18",
+    currentBid: 3.8,
+    endTime: new Date(Date.now() + 1555200000),
+    category: "Пиксель-арт"
+  },
+  {
+    id: "19",
+    title: "Future City #19",
+    image: "https://picsum.photos/400/400?random=19",
+    currentBid: 5.5,
+    endTime: new Date(Date.now() + 1641600000),
+    category: "3D графика"
+  },
+  {
+    id: "20",
+    title: "Digital Soul #20",
+    image: "https://picsum.photos/400/400?random=20",
+    currentBid: 4.7,
+    endTime: new Date(Date.now() + 1728000000),
+    category: "Анимация"
   }
 ];
 
